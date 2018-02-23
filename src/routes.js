@@ -40,7 +40,7 @@ class MobileRoute extends Route {
         return this.navigate(
             'podto:' +
             'url=' + encodeURIComponent(this.url) +
-            this.type ? '&type=' + encodeURIComponent(this.type) : ''
+            (this.type ? '&type=' + encodeURIComponent(this.type) : '')
         )
     }
 }
@@ -54,7 +54,7 @@ class DesktopRoute extends Route {
         return this.navigate(
             'web+podto:' +
             'url=' + encodeURIComponent(this.url) +
-            this.type ? '&type=' + encodeURIComponent(this.type) : ''
+            (this.type ? '&type=' + encodeURIComponent(this.type) : '')
         )
     }
 }

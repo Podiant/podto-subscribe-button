@@ -5,9 +5,9 @@ module.exports = {
   output: {
     filename: 'dist/podto-subscribe-button.js'
   },
-  // plugins: [
-  //   new UglifyJsPlugin()
-  // ],
+  plugins: [
+    new UglifyJsPlugin()
+  ],
   module: {
     loaders: [
       {
